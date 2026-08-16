@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-ink text-white antialiased;
+    background-image: radial-gradient(1200px 600px at 50% -10%, #2a1552 0%, transparent 60%);
+    background-attachment: fixed;
+    -webkit-tap-highlight-color: transparent;
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  select,
+  option {
+    @apply bg-panel2 text-white;
+  }
+}
